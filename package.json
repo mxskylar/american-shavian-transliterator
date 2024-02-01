@@ -26,6 +26,9 @@
     "pronouncing": "github:aparrish/pronouncingjs"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   }

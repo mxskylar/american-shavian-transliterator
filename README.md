@@ -11,3 +11,11 @@ Once you have installed node & the dev dependencies for this project, the transl
 ```bash
 npm run transliterate
 ```
+
+## Babel
+
+To transform ES6 into ES5 with Babel, run:
+
+```bash
+npx babel index.ts --out-file babel_output.js
+```
