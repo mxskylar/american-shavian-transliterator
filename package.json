@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/mxskylar/american-shavian-transliterator#readme",
   "dependencies": {
-    "pronouncing": "github:aparrish/pronouncingjs",
+    "pronouncing": "github:aparrish/pronouncingjs"
+  },
+  "devDependencies": {
     "typescript": "^5.3.3"
   }
 }
