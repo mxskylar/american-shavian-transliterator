@@ -2,7 +2,7 @@
   "name": "american-shavian-transliterator",
   "version": "0.1.0",
   "description": "Transliterates English written in the Roman alphabet to English written in Shavian alphabet as pronounced in the \"general\" American accent.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/mxskylar/american-shavian-transliterator/issues"
   },
-  "homepage": "https://github.com/mxskylar/american-shavian-transliterator#readme"
+  "homepage": "https://github.com/mxskylar/american-shavian-transliterator#readme",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
 }
