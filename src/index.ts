@@ -16,7 +16,7 @@ const APRABET_TO_SHAVIAN: MapOfStrings = {
   D: '',
   DH: '',
   EH: '',
-  ER: '',
+  ER: '𐑻',
   EY: '',
   F: '',
   G: '',
@@ -46,9 +46,23 @@ const APRABET_TO_SHAVIAN: MapOfStrings = {
   ZH: '',
 };
 
-SHAVIAN_COMPOUND_LETTERS = {
-  𐑭𐑮: '𐑸',
-};
+// Use map to ensure order of keys: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+// That way, in the case that:
+//  (a) A compound letter is a subsuet
+//  (b) of a parent compound letter,
+// b comes before a, and will always take precendent
+const SHAVIAN_COMPOUND_LETTERS: MapOfStrings = new Map();
+// "Parent" compound letters
+SHAVIAN_COMPOUND_LETTERS.set('𐑧𐑩𐑮', '𐑺')
+SHAVIAN_COMPOUND_LETTERS.set('𐑦𐑩𐑮', '𐑽');
+// "Subset" compound letters
+SHAVIAN_COMPOUND_LETTERS.set('𐑩𐑮', '𐑼');
+SHAVIAN_COMPOUND_LETTERS.set('𐑦𐑩', '𐑾');
+// Other compound letters
+SHAVIAN_COMPOUND_LETTERS.set('𐑡𐑵', '𐑿');
+SHAVIAN_COMPOUND_LETTERS.set('𐑭𐑮', '𐑸');
+SHAVIAN_COMPOUND_LETTERS.set('𐑷𐑮', '𐑹');
+// Not including 𐑻 because it matches directly with ER in the arpabet
 
 function splitOnSpace(text: string): string[] {
   // Remove duplicate spaces & spaces at the beginning & end of the string, then split
@@ -105,3 +119,6 @@ export default function toShavian(text: string): string {
 }
 
 console.log(toShavian("adverse helicopter"));
+const m = new Map();
+m.set('foo', 'bar');
+console.log(m);
