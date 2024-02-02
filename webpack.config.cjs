@@ -21,5 +21,6 @@ module.exports = {
     alias: {
         'fs': path.join(__dirname, 'node_modules/brfs'),
     }
-  }
+  },
+  mode: 'production'
 };

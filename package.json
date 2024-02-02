@@ -22,7 +22,7 @@
     "url": "https://github.com/mxskylar/american-shavian-transliterator/issues"
   },
   "homepage": "https://github.com/mxskylar/american-shavian-transliterator#readme",
-  "dependencies": {
+  "dependencies": { 
     "pronouncing": "github:aparrish/pronouncingjs"
   },
   "devDependencies": {
@@ -41,6 +41,8 @@
     "brfs": "^1.6.1",
     "browserify": "^17.0.0",
     "tape": "^4.0.0",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
     "underscore": "^1.8.3"
   }
 }
