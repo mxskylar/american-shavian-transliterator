@@ -5,8 +5,7 @@
   "description": "Transliterates English written in the Roman alphabet to English written in Shavian alphabet as pronounced in the \"general\" American accent.",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "transliterate": "exec tsx index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

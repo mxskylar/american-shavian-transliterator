@@ -1,4 +1,4 @@
-import * as pronouncing from 'pronouncing';
+import {phonesForWord} from 'pronouncing';
 
-console.log(pronouncing.phonesForWord("adverse"));
-console.log(pronouncing.phonesForWord("helicopter"));
+console.log(phonesForWord("adverse"));
+console.log(phonesForWord("helicopter"));

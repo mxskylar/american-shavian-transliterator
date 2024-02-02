@@ -9,7 +9,7 @@ The [pronouncingjs](https://github.com/aparrish/pronouncingjs) package by `aparr
 Once you have installed node & the dev dependencies for this project, the transliteration script can be run over the CLI like so:
 
 ```bash
-npm run transliterate
+npx tsx src/index.ts
 ```
 
 ## Babel
