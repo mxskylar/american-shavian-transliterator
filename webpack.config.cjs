@@ -1,4 +1,7 @@
-var path = require('path');
+const path = require('path');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   module: {
     rules: [
@@ -23,8 +26,14 @@ module.exports = {
     }
   },
   mode: 'production',
+  plugins: [
+     new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
+    new HtmlWebpackPlugin()
+  ],
   externals: {
-    through2: 'through2',
+    /*through2: 'through2',
     'quote-stream': 'quote-stream',
     'concat-stream': 'concat-stream',
     duplexer2: 'duplexer2',
@@ -73,6 +82,6 @@ module.exports = {
     'has-symbols': 'has-symbols',
     'has-proto': 'has-proto',
     'define-data-property': 'define-data-property',
-    'has-property-descriptors': 'has-property-descriptors',
+    'has-property-descriptors': 'has-property-descriptors',*/
   }
 };
