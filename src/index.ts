@@ -1,4 +1,4 @@
-import {phonesForWord} from 'pronouncing';
+import {phonesForWord} from 'pronouncing/build/pronouncing-browser.js';
 
 console.log(phonesForWord("adverse"));
 

@@ -12,10 +12,11 @@ Once you have installed node & the dev dependencies for this project, the transl
 npx tsx src/index.ts
 ```
 
-## Babel
+## Build for Browser
 
-To transform ES6 into ES5 with Babel, run:
+To build a minified JavaScript file optimized for browsers, run the following:
 
 ```bash
-npx babel index.ts --out-file babel_output.js
+npm explore pronouncing -- npm run build
+npx webpack
 ```
