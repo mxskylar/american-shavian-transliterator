@@ -1,7 +1,7 @@
 # american-shavian-transliterator
 
 This Node.js module transliterates English written in the Latin alphabet to the [Shavian alphabet](https://www.shavian.info/)
-as it is pronounced in the "general" American dialect.
+as it is pronounced in the "general" American dialect. You can use it at: https://mxskylar.github.io/american-shavian-transliterator/
 
 The [CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict) and the [pronouncingjs](https://github.com/aparrish/pronouncingjs)
 package by `aparrish` are used to determine how words are pronounced.
@@ -12,6 +12,7 @@ To setup a local developer environment for this project, you will need:
 
 1. The correct version of node installed. The easiest way to do that is to use [nvm](https://github.com/nvm-sh/nvm). Run `nvm use`.
 2. Dependencies installed. Run `make dependencies`.
+3. Git hooks setup to ensure that [artifacts built for browsers](#build-for-browser) are committed. Run `git config core.hooksPath ".githooks"`.
 
 ## Build for Browser
 
