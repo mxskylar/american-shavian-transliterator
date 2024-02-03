@@ -113,10 +113,11 @@ function getShavianWord(punctuatedWord: string): string {
 export default function toShavian(text: string, customWordOverrides: MapOfStrings = {}): string {
   const wordOverrides: MapOfStrings = {...DEFAULT_WORD_OVERRIDES, ...customWordOverrides};
   const latinWords: string[] = splitOnSpace(text);
-  let shavianWords: string = "";
+  let shavianWords: string[] = [];
   latinWords.forEach(latinWord => {
     const wordOverride: string  = wordOverrides[latinWord.toLowerCase()];
-    shavianWords += wordOverride ? `${wordOverride} ` : `${getShavianWord(latinWord)} `
+    const shavianWord = wordOverride ? wordOverride : getShavianWord(latinWord);
+    shavianWords.push(shavianWord);
   });
-  return shavianWords.trim();
+  return shavianWords.join(' ');
 }
