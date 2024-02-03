@@ -9,7 +9,7 @@
     <script type="text/javascript">
       function transliterate() {
         const latin = document.getElementById('latin').value;
-        const shavian = toShavian(latin);
+        const shavian = transliterator.toShavian(latin);
         document.getElementById('shavian').innerText = shavian;
       }
     </script>

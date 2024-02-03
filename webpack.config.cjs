@@ -16,10 +16,10 @@ module.exports = {
       }
     ]
   },
-  entry: "./src/index.ts",
+  entry: "./src/browser.ts",
   output: {
     filename: 'bundle.js',
-    library: 'toShavian',
+    library: 'transliterator',
     libraryTarget: 'window',
     libraryExport: 'default'
   },

@@ -1,4 +1,4 @@
-import {phonesForWord} from 'pronouncing/build/pronouncing-browser.js';
+import {phonesForWord} from "pronouncing/build/pronouncing-browser.js";
 
 type MapOfStrings = {
   [key: string]: string;
