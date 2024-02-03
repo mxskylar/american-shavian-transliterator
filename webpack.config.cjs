@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   module: {
@@ -19,6 +18,9 @@ module.exports = {
   entry: "./src/index.ts",
   output: {
     filename: 'bundle.js',
+    library: 'toShavian',
+    libraryTarget: 'window',
+    libraryExport: 'default'
   },
   resolve: {
     alias: {
@@ -33,9 +35,11 @@ module.exports = {
     new webpack.ProvidePlugin({
       Buffer: ['buffer', 'Buffer'],
     }),
-    new HtmlWebpackPlugin()
   ],
   performance: {
     hints: false
-  } 
+  },
+  optimization: {
+    minimize: false,
+  },
 };

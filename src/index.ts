@@ -120,5 +120,3 @@ export default function toShavian(text: string, customWordOverrides: MapOfString
   });
   return shavianWords.trim();
 }
-
-console.log(toShavian("The adverse helicopter hovers and flies over my mom's house. The jury was sure. That was awesome, and I told them: \"thank you!\""));
