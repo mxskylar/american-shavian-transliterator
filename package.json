@@ -1,9 +1,9 @@
 {
   "name": "american-shavian-transliterator",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Transliterates English written in the Roman alphabet to English written in Shavian alphabet as pronounced in the \"general\" American accent.",
-  "main": "cli.ts",
+  "main": "src/node.ts",
   "scripts": {
     "transliterate": "exec tsx src/cli.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
