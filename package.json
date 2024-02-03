@@ -35,13 +35,14 @@
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
     "webpack": "^5.90.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-utf8-bom": "^1.4.0",
+    "path": "^0.12.7"
   },
   "peerDependencies": {
     "brfs": "^1.6.1",
     "browserify": "^17.0.0",
-    "os": "^0.1.2",
-    "path": "^0.12.7",
+    "os": "^0.1.2", 
     "tape": "^4.0.0",
     "underscore": "^1.8.3"
   }

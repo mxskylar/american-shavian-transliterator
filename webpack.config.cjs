@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack')
+const BomPlugin = require('webpack-utf8-bom');
 
 module.exports = {
   module: {
@@ -35,6 +36,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       Buffer: ['buffer', 'Buffer'],
     }),
+    new BomPlugin(true),
   ],
   performance: {
     hints: false
