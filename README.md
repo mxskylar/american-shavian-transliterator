@@ -1,6 +1,6 @@
 # american-shavian-transliterator
 
-This Node.js module & webpage transliterates English written in the Latin alphabet to the [Shavian alphabet](https://www.shavian.info/)
+This Node.js module transliterates English written in the Latin alphabet to the [Shavian alphabet](https://www.shavian.info/)
 as it is pronounced in the "general" American dialect.
 
 The [CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict) and the [pronouncingjs](https://github.com/aparrish/pronouncingjs)
