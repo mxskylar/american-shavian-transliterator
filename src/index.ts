@@ -97,7 +97,7 @@ function convertArpabetToShavian(arpabetLetters: string): string {
 
 function getShavianWord(punctuatedWord: string): string {
   // Strip out all punctuation except apostrophes when looking up arpabet spelling
-  const nonPunctuatedWord: string = /(\w|')+/.exec(punctuatedWord)[0];
+  const nonPunctuatedWord: string = /(\w|')+/.exec(punctuatedWord)[0].toLowerCase();
   const arpabetSpellings: string[] = phonesForWord(nonPunctuatedWord);
   // Default to original spelling of word if equivalent arpabet spelling cannot be found
   if (!arpabetSpellings || !arpabetSpellings.length > 0) {
@@ -116,7 +116,7 @@ export default function toShavian(text: string, customWordOverrides: MapOfString
   let shavianWords: string = "";
   latinWords.forEach(latinWord => {
     const wordOverride: string  = wordOverrides[latinWord.toLowerCase()];
-    shavianWords += wordOverride ? wordOverride : `${getShavianWord(latinWord)} `
+    shavianWords += wordOverride ? `${wordOverride} ` : `${getShavianWord(latinWord)} `
   });
   return shavianWords.trim();
 }
