@@ -18,7 +18,7 @@ To setup a local developer environment for this project, you will need:
 To transliterate over the CLI with Node.js, run:
 
 ```bash
-npx tsx src/index.ts
+npm run transliterate
 ```
 
 ## Build for Browser
