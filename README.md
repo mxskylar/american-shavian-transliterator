@@ -13,14 +13,6 @@ To setup a local developer environment for this project, you will need:
 1. The correct version of node installed. The easiest way to do that is to use [nvm](https://github.com/nvm-sh/nvm). Run `nvm use`.
 2. Dependencies installed. Run `make dependencies`.
 
-## CLI with Node
-
-To transliterate over the CLI with Node.js, run:
-
-```bash
-npm run transliterate
-```
-
 ## Build for Browser
 
 To build a minified JavaScript file optimized for browsers, run:
