@@ -1,3 +1,20 @@
+header h1 {
+	margin-top: 0;
+}
+article {
+	min-height: 95vh;
+}
+footer {
+	min-height: 5vh;
+}
+#transliterate-button {
+	margin-top: 5px;
+}
+#latin {
+	width: 95vw;
+	height: 30vh;
+}
 #shavian {
+	margin-top: 20px;
 	word-spacing: 5px;
 }
