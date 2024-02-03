@@ -12,6 +12,7 @@ To setup a local developer environment for this project, you will need:
 
 1. The correct version of node installed. The easiest way to do that is to use [nvm](https://github.com/nvm-sh/nvm). Run `nvm use`.
 2. Dependencies installed. Run `make dependencies`.
+3. Git hooks setup to ensure that [artifacts built for browsers](#build-for-browser) are committed. Run `git config core.hooksPath ".githooks"`.
 
 ## Build for Browser
 
