@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Test webpage for American shavian transliterator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="./dist/bundle.js"></script>
+    <script type="text/javascript">
+      function transliterate() {
+        const latin = document.getElementById('latin').value;
+        const shavian = transliterator.toShavian(latin);
+        document.getElementById('shavian').innerText = shavian;
+      }
+    </script>
+    <textarea id="latin" rows="20" cols="100" placeholder="English in Latin alphabet"></textarea>
+    <button type="button" onclick="transliterate()">Transliterate to Shavian</button>
+    <div id="shavian"></div>
+  </body>
+</html>
