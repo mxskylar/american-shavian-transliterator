@@ -16,6 +16,11 @@ Unlike [standard Shavian spelling](https://www.shavian.info/spelling/), it spell
 
 The [pronouncingjs](https://github.com/aparrish/pronouncingjs) package by `aparrish` is used to access the CMU dictionary.
 
+## How does this tool handle punctuation?
+
+All original punctuation is preserved except for apostrophes, which are stripped away.
+Shavian namer-dots for propper nounds are **not** used.
+
 ## Are there other Shavian transliterators that I can use?
 
 There are! You can find some of them [here](https://www.shavian.info/resources/).
