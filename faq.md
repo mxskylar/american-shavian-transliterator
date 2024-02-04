@@ -6,7 +6,7 @@ layout: default
 
 The [Shavian alphabet](https://www.shavian.info/) is an alternative alphabet for English.
 It is [phonemic](https://en.wikipedia.org/wiki/Phonemic_orthography) and is capable
-of representing words exactly as they are pronounced, depending on how you spell.
+of representing words exactly as they are pronounced, depending on how you spell with it.
 
 ## How does this tool spell in Shavian?
 
