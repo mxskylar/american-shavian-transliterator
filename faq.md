@@ -18,8 +18,8 @@ The [pronouncingjs](https://github.com/aparrish/pronouncingjs) package by `aparr
 
 ## How does this tool handle punctuation?
 
-All original punctuation is preserved except for apostrophes, which are stripped away.
-Shavian namer-dots for propper nounds are **not** used.
+All original punctuation is preserved, except for apostrophes, which are stripped away.
+Shavian namer-dots for proper nouns are **not** used.
 
 ## Are there other Shavian transliterators that I can use?
 
