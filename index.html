@@ -1,7 +1,19 @@
 ---
 layout: default
-title: American Shavian Transliterator
 ---
+<style>
+  #transliterate-button {
+    margin-top: 5px;
+  }
+  #latin {
+    width: 95vw;
+    height: 30vh;
+  }
+  #shavian {
+    margin-top: 20px;
+    word-spacing: 5px;
+  }
+</style>
 <script type="text/javascript" src="./dist/bundle.js"></script>
 <script type="text/javascript">
   function transliterate() {
@@ -10,28 +22,6 @@ title: American Shavian Transliterator
     document.getElementById('shavian').innerText = shavian;
   }
 </script>
-<article>
-  <header>
-  <h1>American Shavian Transliterator</h1>
-    <p>
-      Want to write English exactly as it is pronounced in the 
-      <a href="https://en.wikipedia.org/wiki/General_American_English">general" American dialect</a>? You're in luck!
-    </p>
-    <p>
-      This tool transliterates English written in the Latin alphabet to the <a href="https://www.shavian.info/">Shavian alphabet</a>. 
-      Unlike <a href="https://www.shavian.info/spelling/">standard Shavian spelling</a>, it spells words exactly as they are pronounced.
-    </p>
-    <p>
-      The <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU Pronouncing Dictionary</a> and 
-      <a href="https://github.com/aparrish/pronouncingjs">pronouncingjs</a> package 
-      are used to determine how words are pronounced in the "general" American dialect.
-    </p>
-  </header>
-  <textarea id="latin" placeholder="English in Latin alphabet"></textarea>
-  <button type="button" onclick="transliterate()" id="transliterate-button">Transliterate to Shavian</button>
-  <div id="shavian"></div>
-</article>
-<footer>
-  <img src="logo-icon.png" alt="Pixelated letter a, the transliterator's logo" /> icon from <a href="https://icons8.com/">icons8</a>.
-  Site source code available on <a href="https://github.com/mxskylar/american-shavian-transliterator">GitHub</a>.
-</footer>
+<textarea id="latin" placeholder="English in Latin alphabet"></textarea>
+<button type="button" onclick="transliterate()" id="transliterate-button">Transliterate to Shavian</button>
+<div id="shavian"></div>
