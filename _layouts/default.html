@@ -17,7 +17,7 @@
     <header class="page-header" role="banner">
       <a href="/{{ site.github.repository_name }}" id="site-title"><h1 class="project-name">{{ site.title }}</h1></a>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% for link in nav %}
+      {% for link in site.nav %}
         <a href="/{{ site.github.repository_name }}/{{ link[1] }}" class="btn">{{ link[0] }}</a>
       {% endfor %}
     </header>
