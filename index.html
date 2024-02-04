@@ -1,20 +1,32 @@
-<!DOCTYPE html>
-<html> 
-  <head>
-    <title>Test webpage for American shavian transliterator</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <script type="text/javascript" src="./dist/bundle.js"></script>
-    <script type="text/javascript">
-      function transliterate() {
-        const latin = document.getElementById('latin').value;
-        const shavian = transliterator.toShavian(latin);
-        document.getElementById('shavian').innerText = shavian;
-      }
-    </script>
-    <textarea id="latin" rows="20" cols="100" placeholder="English in Latin alphabet"></textarea>
-    <button type="button" onclick="transliterate()">Transliterate to Shavian</button>
-    <div id="shavian"></div>
-  </body>
-</html>
+---
+layout: default
+---
+<style>
+  main {
+    padding: 0 !important;
+    margin: 2vw !important;
+    width: 96vw !important;
+  }
+  #transliterate-button {
+    margin-top: 5px;
+  }
+  #latin {
+    width: 96vw;
+    height: 30vh;
+  }
+  #shavian {
+    margin-top: 20px;
+    word-spacing: 5px;
+  }
+</style>
+<script type="text/javascript" src="./dist/bundle.js"></script>
+<script type="text/javascript">
+  function transliterate() {
+    const latin = document.getElementById('latin').value;
+    const shavian = transliterator.toShavian(latin);
+    document.getElementById('shavian').innerText = shavian;
+  }
+</script>
+<textarea id="latin" placeholder="English in Latin alphabet"></textarea>
+<button type="button" onclick="transliterate()" id="transliterate-button">Transliterate to Shavian</button>
+<div id="shavian"></div>
