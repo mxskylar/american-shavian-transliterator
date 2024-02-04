@@ -4,4 +4,4 @@ plugins:
   - jekyll-remote-theme
 nav:
   - text: "About"
-    link: "about"
+    href: "about"
