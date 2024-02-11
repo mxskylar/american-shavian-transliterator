@@ -17,7 +17,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Make dev directory
         shell: bash
-        run: "PROJECT=\"$(basename $(pwd))\"; cd ..; mkdir _tmp; cp $PROJECT/* _tmp; mkdir -p $PROJECT/_dev/${{ github.ref_name }}; cp _tmp/* $PROJECT/_dev/${{ github.ref_name }}; rm -rf _tmp"
+        run: "PROJECT=\"$(basename $(pwd))\"; cd ..; mkdir _tmp; cp -r $PROJECT/* _tmp; mkdir -p $PROJECT/_dev/${{ github.ref_name }}; mv _tmp/* $PROJECT/_dev/${{ github.ref_name }}; rm -rf _tmp"
       - name: ls
         shell: bash
         run: "ls -la _dev/mxskylar_dev_deploy"
