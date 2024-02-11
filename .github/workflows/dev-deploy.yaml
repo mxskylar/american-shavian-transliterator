@@ -1,4 +1,5 @@
 name: Build Jekyll site
+permissions: write-all
 on:
  push:
    branches:
