@@ -25,7 +25,7 @@ jobs:
           path: "./_dev/${{ github.ref_name }}"
       - name: Print variable
         shell: bash
-        run: "PROJECT=\"$(basename $(pwd))\"; cd ..; ls $PROJECT/_dev; ls $PROJECT/_dev/mxskylar_dev_deploy"
+        run: "PROJECT=\"$(basename $(pwd))\"; cd ..; ls $PROJECT/_dev; ls $PROJECT/_dev"
         id: test
   deploy:
     runs-on: ubuntu-latest
