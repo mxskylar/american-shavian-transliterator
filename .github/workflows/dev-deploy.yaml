@@ -1,4 +1,4 @@
-name: Build Jekyll site
+name: Build GitHub Pages site from feature branch 
 on:
  push:
    branches:
