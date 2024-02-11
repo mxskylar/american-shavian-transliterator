@@ -18,14 +18,14 @@ jobs:
       - name: Build
         uses: actions/jekyll-build-pages@v1
         with:
-          destination: "./_dev"
+          destination: "./_dev/${{ github.ref_name }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "./_dev"
+          path: "./_dev/${{ github.ref_name }}"
       - name: Extract branch name
         shell: bash
-        run: echo "${{ github.ref_name }}"
+        run: echo "${{ steps.deployment.outputs.page_url }}"
         id: test
   deploy:
     runs-on: ubuntu-latest
