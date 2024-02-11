@@ -4,7 +4,7 @@ on:
    branches:
      - "mxskylar_dev_deploy"
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 jobs:
