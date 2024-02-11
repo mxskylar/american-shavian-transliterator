@@ -2,7 +2,7 @@ name: Build Jekyll site
 on:
  push:
    branches:
-     - "!main"
+     - "mxskylar_dev_deploy"
 permissions:
   contents: read
   pages: write
