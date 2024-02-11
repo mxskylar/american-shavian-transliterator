@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: "./_dev/${{ github.ref_name }}"
-      - name: Extract branch name
+      - name: Print variable
         shell: bash
         run: echo "${{ steps.deployment.outputs.page_url }}"
         id: test
