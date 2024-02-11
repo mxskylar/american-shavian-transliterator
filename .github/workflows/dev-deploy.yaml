@@ -23,8 +23,6 @@ jobs:
         run: "ls -la _dev/mxskylar_dev_deploy"
       - name: Build
         uses: actions/jekyll-build-pages@v1
-        with:
-          destination: "./_dev/${{ github.ref_name }}"
       - name: ls
         shell: bash
         run: "ls -la _dev/mxskylar_dev_deploy"
