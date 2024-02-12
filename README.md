@@ -1,6 +1,6 @@
 # american-shavian-transliterator
 
-⚠️  **This project is a WIP:** It has known issues and is not 100% accurate. Checkout [Dave Coffin's Shavian converter](https://dechifro.org/shavian/) for a more accurate tool. ⚠️
+⚠️  **This project is a WIP:** It has known issues and is not 100% accurate. Checkout [Dave Coffin's Shavian converter](https://dechifro.org/shavian/) for a more accurate tool.
 
 This Node.js module transliterates English written in the Latin alphabet to the [Shavian alphabet](https://www.shavian.info/)
 exactly as it is pronounced in the "general" American dialect. You can use it at: https://mxskylar.github.io/american-shavian-transliterator/
